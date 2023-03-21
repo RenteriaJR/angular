@@ -1,0 +1,20 @@
+body{
+    background: #ff2600;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+img{
+    padding: 0px;
+    margin: 0px;
+    width: 250px;
+    
+}
+
+p{
+    font-size: 20px;
+}

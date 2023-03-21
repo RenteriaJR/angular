@@ -1,0 +1,17 @@
+<div id="head">
+    <div>
+        <form style="background: #ffd503;" class="text-center justify-content-center">
+            <mat-form-field appearance="fill" class="mx-2">
+                <mat-label>Find Pokemons</mat-label>
+                <input #findPokemon type="text" matInput placeholder="Pikachu"
+                    (keyup)="filterPokemons(findPokemon.value)">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </form>
+    </div>
+</div>
+<div class="row justify-content-center" style="background-color: #FF5350;">
+    <div *ngFor="let pokemon of pokemonsFiltered" style=" margin: 2px; width: 180px;">
+        <app-poke-card [pokemon]="pokemon"></app-poke-card>
+    </div>
+</div>

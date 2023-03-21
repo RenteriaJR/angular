@@ -1,0 +1,13 @@
+<mat-card id="card" class="card text-dark justify-content-center">
+    <mat-card-header>
+        {{pokemon.name | upperCaseCustom}}
+    </mat-card-header>
+    <img mat-card-image [src]="pokemonDetails.sprites.front_default" alt="{{pokemonDetails.name}} image">
+    <mat-card-content>
+        
+    </mat-card-content>
+    <mat-card-actions class="row justify-content-center">
+        <button routerLink="/pokemon-details/{{pokemonDetails.name}}"><img src="https://cdn-icons-png.flaticon.com/512/2354/2354551.png" style= "max-width: 20px;"/></button>
+        <button routerLink="/app-view-image/{{pokemonDetails.name}}"><img src="https://cdn-icons-png.flaticon.com/512/2198/2198323.png" style= "max-width: 20px;"/></button>
+    </mat-card-actions>
+</mat-card>

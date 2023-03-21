@@ -1,0 +1,7 @@
+<div id="contentCard" class="text-center justify-content-center">
+    <h1>{{ this.name }}</h1>
+    <img mat-card-image [src]="pokemonDetails.sprites.front_default" alt="{{pokemonDetails.name}} image">
+    <p> Height: {{pokemonDetails.height}}</p>
+    <p>Tiene {{this.name | lengthPokeName}} letras (calculado con una PIPE)</p>
+    <p>{{ this.name }} en hexadecimal es: {{this.name | convertPokeNameToHexa}} (calculado con una PIPE)</p>
+</div>
